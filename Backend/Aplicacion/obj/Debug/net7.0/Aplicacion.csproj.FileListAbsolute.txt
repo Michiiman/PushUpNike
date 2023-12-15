@@ -1,0 +1,17 @@
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.csproj.AssemblyReference.cache
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.AssemblyInfo.cs
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\bin\Debug\net7.0\Aplicacion.deps.json
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\bin\Debug\net7.0\Aplicacion.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\bin\Debug\net7.0\Aplicacion.pdb
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\bin\Debug\net7.0\Dominio.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\bin\Debug\net7.0\persistencia.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\bin\Debug\net7.0\Dominio.pdb
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\bin\Debug\net7.0\persistencia.pdb
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.csproj.CopyComplete
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\refint\Aplicacion.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\Aplicacion.pdb
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\Aplicacion\obj\Debug\net7.0\ref\Aplicacion.dll

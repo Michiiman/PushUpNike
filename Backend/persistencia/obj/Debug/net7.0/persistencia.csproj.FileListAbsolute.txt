@@ -1,0 +1,15 @@
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\bin\Debug\net7.0\persistencia.deps.json
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\bin\Debug\net7.0\persistencia.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\bin\Debug\net7.0\persistencia.pdb
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\bin\Debug\net7.0\Dominio.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\bin\Debug\net7.0\Dominio.pdb
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.csproj.AssemblyReference.cache
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.AssemblyInfoInputs.cache
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.AssemblyInfo.cs
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.csproj.CopyComplete
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\refint\persistencia.dll
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\persistencia.pdb
+C:\Users\Camilo\Desktop\ProyectoFullStack\Backend\persistencia\obj\Debug\net7.0\ref\persistencia.dll
