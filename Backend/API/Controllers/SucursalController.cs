@@ -9,12 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers;
 [ApiVersion("1.0")]
 [ApiVersion("1.1")]
-[Authorize]
+//[Authorize]
 
 public class SucursalController : BaseApiController
 {
     private readonly IUnitOfWork unitofwork;
-    private readonly  IMapper mapper;
+    private readonly IMapper mapper;
 
     public SucursalController(IUnitOfWork unitofwork, IMapper mapper)
     {
@@ -28,19 +28,19 @@ public class SucursalController : BaseApiController
 
     public async Task<ActionResult<IEnumerable<SucursalDto>>> Get()
     {
-        var Sucursal = await unitofwork.Sucursals.GetAllAsync();
+        var Sucursal = await unitofwork.Sucursales.GetAllAsync();
         return mapper.Map<List<SucursalDto>>(Sucursal);
     }
-   [HttpGet]
-   [MapToApiVersion("1.1")]
-   [ProducesResponseType(StatusCodes.Status200OK)]
-   [ProducesResponseType(StatusCodes.Status400BadRequest)]
-   public async Task<ActionResult<Pager<RolDto>>> GetPagination([FromQuery] Params paisParams)
-   {
-       var entidad = await unitofwork.Roles.GetAllAsync(paisParams.PageIndex, paisParams.PageSize, paisParams.Search);
-       var listEntidad = mapper.Map<List<RolDto>>(entidad.registros);
-       return new Pager<RolDto>(listEntidad, entidad.totalRegistros, paisParams.PageIndex, paisParams.PageSize, paisParams.Search);
-   }
+    [HttpGet]
+    [MapToApiVersion("1.1")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<ActionResult<Pager<SucursalDto>>> GetPagination([FromQuery] Params paisParams)
+    {
+        var entidad = await unitofwork.Roles.GetAllAsync(paisParams.PageIndex, paisParams.PageSize, paisParams.Search);
+        var listEntidad = mapper.Map<List<SucursalDto>>(entidad.registros);
+        return new Pager<SucursalDto>(listEntidad, entidad.totalRegistros, paisParams.PageIndex, paisParams.PageSize, paisParams.Search);
+    }
 
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -49,8 +49,9 @@ public class SucursalController : BaseApiController
 
     public async Task<ActionResult<SucursalDto>> Get(int id)
     {
-        var Sucursal = await unitofwork.Sucursals.GetByIdAsync(id);
-        if (Sucursal == null){
+        var Sucursal = await unitofwork.Sucursales.GetByIdAsync(id);
+        if (Sucursal == null)
+        {
             return NotFound();
         }
         return this.mapper.Map<SucursalDto>(Sucursal);
@@ -63,14 +64,14 @@ public class SucursalController : BaseApiController
     public async Task<ActionResult<Sucursal>> Post(SucursalDto SucursalDto)
     {
         var Sucursal = this.mapper.Map<Sucursal>(SucursalDto);
-        this.unitofwork.Sucursals.Add(Sucursal);
+        this.unitofwork.Sucursales.Add(Sucursal);
         await unitofwork.SaveAsync();
-        if(Sucursal == null)
+        if (Sucursal == null)
         {
             return BadRequest();
         }
         SucursalDto.Id = Sucursal.Id;
-        return CreatedAtAction(nameof(Post), new {id = SucursalDto.Id}, SucursalDto);
+        return CreatedAtAction(nameof(Post), new { id = SucursalDto.Id }, SucursalDto);
     }
 
     [HttpPut("{id}")]
@@ -78,13 +79,14 @@ public class SucursalController : BaseApiController
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<ActionResult<SucursalDto>> Put(int id, [FromBody]SucursalDto SucursalDto){
-        if(SucursalDto == null)
+    public async Task<ActionResult<SucursalDto>> Put(int id, [FromBody] SucursalDto SucursalDto)
+    {
+        if (SucursalDto == null)
         {
             return NotFound();
         }
         var Sucursal = this.mapper.Map<Sucursal>(SucursalDto);
-        unitofwork.Sucursals.Update(Sucursal);
+        unitofwork.Sucursales.Update(Sucursal);
         await unitofwork.SaveAsync();
         return SucursalDto;
     }
@@ -93,13 +95,14 @@ public class SucursalController : BaseApiController
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<IActionResult> Delete(int id){
-        var Sucursal = await unitofwork.Sucursals.GetByIdAsync(id);
-        if(Sucursal == null)
+    public async Task<IActionResult> Delete(int id)
+    {
+        var Sucursal = await unitofwork.Sucursales.GetByIdAsync(id);
+        if (Sucursal == null)
         {
             return NotFound();
         }
-        unitofwork.Sucursals.Remove(Sucursal);
+        unitofwork.Sucursales.Remove(Sucursal);
         await unitofwork.SaveAsync();
         return NoContent();
     }
