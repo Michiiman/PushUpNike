@@ -4,7 +4,7 @@ public interface IUnitOfWork
    IRol Roles { get; }
    IUsuario Usuarios { get; }
    ICliente Clientes { get; }
-   ISucursal Sucursals { get; }
+   ISucursal Sucursales { get; }
    IReparto Repartos { get; }
    ICompra Compras { get; }
    IInventario Inventarios { get; }
